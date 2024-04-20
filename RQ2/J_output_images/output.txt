@@ -1,0 +1,96 @@
+[Running] python -u "c:\Users\jeeva\Documents\ESPNAnalytics\RQ2\jeev.py"
+       TotalAwayCards  AttendanceScaled
+count      759.000000        759.000000
+mean         1.891963         10.364588
+std          1.361524          0.349912
+min          0.000000          9.592332
+25%          1.000000         10.114881
+50%          2.000000         10.401562
+75%          3.000000         10.592501
+max          7.000000         11.122605
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:         TotalAwayCards   No. Observations:                  607
+Model:                            GLM   Df Residuals:                      605
+Model Family:        NegativeBinomial   Df Model:                            1
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -1026.0
+Date:                Sat, 20 Apr 2024   Deviance:                       93.186
+Time:                        18:50:15   Pearson chi2:                     48.1
+No. Iterations:                     9   Pseudo R-squ. (CS):             0.2881
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const             -0.7171      0.102     -7.037      0.000      -0.917      -0.517
+TotalAwayCards     0.5767      0.038     15.047      0.000       0.502       0.652
+==================================================================================
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:         TotalAwayCards   No. Observations:                  607
+Model:                            GLM   Df Residuals:                      605
+Model Family:        NegativeBinomial   Df Model:                            1
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -1027.9
+Date:                Sat, 20 Apr 2024   Deviance:                       95.416
+Time:                        18:50:15   Pearson chi2:                     49.3
+No. Iterations:                    10   Pseudo R-squ. (CS):             0.2925
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const             -0.7384      0.103     -7.186      0.000      -0.940      -0.537
+TotalAwayCards     0.5846      0.038     15.240      0.000       0.509       0.660
+==================================================================================
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:         TotalAwayCards   No. Observations:                  607
+Model:                            GLM   Df Residuals:                      605
+Model Family:        NegativeBinomial   Df Model:                            1
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -1022.7
+Date:                Sat, 20 Apr 2024   Deviance:                       97.435
+Time:                        18:50:15   Pearson chi2:                     50.4
+No. Iterations:                    10   Pseudo R-squ. (CS):             0.2920
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const             -0.7234      0.101     -7.143      0.000      -0.922      -0.525
+TotalAwayCards     0.5780      0.038     15.224      0.000       0.504       0.652
+==================================================================================
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:         TotalAwayCards   No. Observations:                  607
+Model:                            GLM   Df Residuals:                      605
+Model Family:        NegativeBinomial   Df Model:                            1
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -1028.0
+Date:                Sat, 20 Apr 2024   Deviance:                       93.179
+Time:                        18:50:15   Pearson chi2:                     48.5
+No. Iterations:                     9   Pseudo R-squ. (CS):             0.2885
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const             -0.7317      0.103     -7.092      0.000      -0.934      -0.529
+TotalAwayCards     0.5836      0.039     15.032      0.000       0.508       0.660
+==================================================================================
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:         TotalAwayCards   No. Observations:                  608
+Model:                            GLM   Df Residuals:                      606
+Model Family:        NegativeBinomial   Df Model:                            1
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -1038.0
+Date:                Sat, 20 Apr 2024   Deviance:                       91.035
+Time:                        18:50:15   Pearson chi2:                     46.9
+No. Iterations:                     9   Pseudo R-squ. (CS):             0.2859
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const             -0.7029      0.102     -6.868      0.000      -0.904      -0.502
+TotalAwayCards     0.5702      0.038     14.977      0.000       0.496       0.645
+==================================================================================
