@@ -5,13 +5,22 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split, KFold
 from sklearn.metrics import mean_squared_error
 
-# Define directory path assuming the script and data folder are at the same level
-directory_path = '../England-premier-league'
-seasons = range(2014, 2019)  # Adjusted for your sample data years
-files = [f'{directory_path}/england-premier-league-{season}-to-{season+1}.csv' for season in seasons]
+# Assuming all CSV files are in the directory 'C:/Users/jeeva/Documents/FourthYearPC/351/Submission2/England-premier-league', CHANGE THIS!!!
+# Corrected directory path
+directory_path = 'C:/Users/jeeva/Documents/ESPNAnalytics/England-premier-league'
 
+seasons = range(2000, 2020)  # Seasons from 2000 to 2019
+files = [f'{directory_path}/england-premier-league-{season}-to-{season+1}.csv' for season in seasons]
 # Load and concatenate data
-data = pd.concat([pd.read_csv(file) for file in files], ignore_index=True)
+data_frames = []
+for file in files:
+    try:
+        df = pd.read_csv(file, on_bad_lines='skip', encoding='ISO-8859-1')
+        data_frames.append(df)
+    except Exception as e:  # Broad exception handling for illustration, specify the exception if possible
+        print(f"Error reading file: {file} - {e}")
+data = pd.concat(data_frames, ignore_index=True)
+
 
 # Check for required columns and handle missing values
 required_columns = ['Attendance', 'FTHG', 'FTAG', 'HS', 'AS', 'HST', 'AST', 'HF', 'AF', 'HC', 'AC', 'HY', 'AY', 'HR', 'AR']
