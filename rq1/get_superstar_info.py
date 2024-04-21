@@ -1,11 +1,11 @@
 import json
 
-f = open("players.json")
+f = open("data/players.json")
 player_data = json.load(f)
 f.close()
 players = {}
 
-f = open("teams.json")
+f = open("data/teams.json")
 team_data = json.load(f)
 f.close()
 
