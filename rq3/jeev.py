@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split, KFold
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 # Corrected directory path
-directory_path = 'C:/Users/jeeva/Documents/ESPNAnalytics/England-premier-league'
+directory_path = 'rq3\data'
 
 seasons = range(2000, 2020)  # Seasons from 2000 to 2019
 files = [f'{directory_path}/england-premier-league-{season}-to-{season+1}.csv' for season in seasons]
