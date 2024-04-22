@@ -13,7 +13,10 @@ from math import sqrt
 from sklearn.model_selection import TimeSeriesSplit
 
 # Created a combined excel files for RQ2 (Only specific files for corresponding years are used)
-base_path = 'C:/Users/richa/Desktop/ESPNAnalytics/England-premier-league/england-premier-league-'
+# base_path = 'C:/Users/richa/Desktop/ESPNAnalytics/England-premier-league/england-premier-league-'
+print("--------------------------------------------------------------")
+
+base_path = os.path.dirname(os.path.abspath(__file__)) + "/data" + "/england-premier-league-" 
 file_paths = [f"{base_path}{year}-to-{year+1}.csv" for year in range(2000, 2019)]
 
 # Create an empty DataFrame to store all data
